@@ -5,12 +5,19 @@ p {
 mat-panel-title {
   font-size: 2vw;
 }
+
+h3 {
+  font-size: 3.5vw;
+}
 @media only screen and (max-width: 768px) {
   p {
     font-size: 4.2vw;
   }
   mat-panel-title {
     font-size: 4.2vw;
+  }
+  h3 {
+    font-size: 5.5vw;
   }
 }
 @media only screen and (max-width: 1440px) and (min-width: 768px) {
@@ -19,6 +26,9 @@ mat-panel-title {
   }
   mat-panel-title {
     font-size: 3.2vw;
+  }
+  h3 {
+    font-size: 5.5vw;
   }
 }
 
@@ -37,19 +47,15 @@ mat-card {
   justify-content: space-evenly;
 }
 
-h3 {
-  font-size: 3.5vw;
-}
-
 mat-card.eduPicsCard {
   flex-direction: column;
   align-items: center;
 }
 
 img {
-  max-width: 50%;
+  max-width: 70%;
 }
-
 img.aboutPic {
-  max-height: 50%;
+  max-width: 60%;
+  min-height: 10%;
 }
