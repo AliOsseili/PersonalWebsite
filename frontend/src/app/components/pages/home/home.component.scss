@@ -1,6 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-
-$roboto: "Roboto";
+p {
+  color: white;
+  font-size: 2vw;
+}
+mat-panel-title {
+  font-size: 2vw;
+}
+@media only screen and (max-width: 768px) {
+  p {
+    font-size: 4.2vw;
+  }
+  mat-panel-title {
+    font-size: 4.2vw;
+  }
+}
+@media only screen and (max-width: 1440px) and (min-width: 768px) {
+  p {
+    font-size: 2.2vw;
+  }
+  mat-panel-title {
+    font-size: 3.2vw;
+  }
+}
 
 mat-expansion-panel {
   padding: 1%;
@@ -16,18 +36,20 @@ mat-card {
   flex-direction: row;
   justify-content: space-evenly;
 }
-p {
-  color: white;
-  font-size: 100%;
+
+h3 {
+  font-size: 3.5vw;
 }
 
-mat-panel-title {
-  font-size: 28px;
-}
 mat-card.eduPicsCard {
   flex-direction: column;
+  align-items: center;
 }
 
 img {
-  max-width: 100%;
+  max-width: 50%;
+}
+
+img.aboutPic {
+  max-height: 50%;
 }
