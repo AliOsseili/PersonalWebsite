@@ -18,4 +18,8 @@ export class HeaderbarComponent {
       )
     );
   }
+
+  OpenMenuOptions() {
+    console.log('hello world');
+  }
 }
