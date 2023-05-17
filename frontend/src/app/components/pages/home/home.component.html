@@ -91,15 +91,30 @@
       <mat-card-content>
         <mat-form-field appearance="outline">
           <mat-label>Your Name</mat-label>
-          <input matInput type="text" autofocus />
+          <input
+            matInput
+            type="text"
+            autofocus
+            #name
+            (keyup)="getValueName(name.value)"
+          />
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
         </mat-form-field>
         <br />
         <mat-form-field appearance="outline">
           <mat-label>Your Message</mat-label>
-          <input matInput type="text" />
+          <input
+            matInput
+            type="text"
+            #message
+            (keyup)="getValueMessage(message.value)"
+          />
           <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
         </mat-form-field>
+        <br />
+        <button mat-flat-button color="primary" (click)="sendMessage()">
+          Send message!
+        </button>
       </mat-card-content>
     </mat-card>
   </mat-expansion-panel>
